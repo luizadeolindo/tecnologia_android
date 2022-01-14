@@ -1,0 +1,130 @@
+@charset "UTF-8" ; 
+@font-face {
+    font-family: android ;
+    src: url(fontes/idroid.otf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor0: #558ae67a;
+    --cor1: #0052E0;
+    --cor2: #0040AD;
+    --cor3: #002461;
+    --cor4: #545C6A;
+    
+    --fonte-androide: android ;
+
+}
+body {
+    background-color: var(--cor0);
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.2em;
+}
+header {
+    background-image: linear-gradient(to bottom, #558ae6d3, #0052E0);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > p {
+    color: white;
+    max-width: 400px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+
+}
+nav {
+    background-color: var(--cor1);
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.253);
+    padding-bottom: 10px;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+nav > a:hover {
+    background-color: var(--cor3);
+}
+a {
+    color: white;
+}
+header > h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+    
+}
+main { 
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1 {
+    font-family: var(--fonte-androide);
+    color: var(--cor3);
+}
+main h2 {
+    font-family: var(--fonte-androide);
+    color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor1), transparent );
+}
+main img {
+    width: 100%;
+}
+main img.pequeno {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.video {
+    background-color: var(--cor3);
+    margin: 0px -20px 30px -20px;
+}
+.video > iframe {
+    display: block;
+    margin: auto;
+    width: 75%;
+    
+}
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.39);
+}
+aside > h3 {
+    background-color: var(--cor1);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul {
+    list-style-type: "\2714\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+footer {
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
